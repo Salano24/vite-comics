@@ -3,6 +3,49 @@ export default{
     name: 'SiteHeader',
     data() {
       return {
+        headerNav: [
+          {
+            text: CHARACTERS,
+            active: false
+          },
+          {
+            text: COMICS,
+            active: true
+          },
+          {
+            text: MOVIES,
+            active: false
+          },
+          {
+            text: TV,
+            active: false
+          },
+          {
+            text: GAMES,
+            active: false
+          },
+          {
+            text: COLLECTIBLES,
+            active: false
+          },
+          {
+            text: VIDEOS,
+            active: false
+          },
+          {
+            text: FANS,
+            active: false
+          },
+          {
+            text: NEWS,
+            active: false
+          },
+          {
+            text: SHOP,
+            active: false
+          },
+        ]
+
         
       }
     }
@@ -16,16 +59,7 @@ export default{
         <img src="../assets/img/dc-logo.png" alt="">
       </div>
       <div class="header_nav">
-        <a href="#">CHARACTERS</a>
-        <a href="#" class="active">COMICS</a>
-        <a href="#">MOVIES</a>
-        <a href="#">TV</a>
-        <a href="#">GAMES</a>
-        <a href="#">COLLECTIBLES</a>
-        <a href="#">VIDEOS</a>
-        <a href="#">FANS</a>
-        <a href="#">NEWS</a>
-        <a href="#">SHOP</a>
+       <a href="#" v-for="item in headerNav" :class="item.active === true ? 'active' : ''">{{item.text}}</a>
       </div>
     </div>
   </header>
