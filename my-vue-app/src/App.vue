@@ -21,8 +21,12 @@ export default{
 
 <template>
   <site-header></site-header>
+
+  <site-jumbo></site-jumbo>
+
+  
 </template>
 
 <style scoped lang="scss">
-   
+
 </style>
