@@ -1,7 +1,7 @@
 @use './variables' as *;
 header{
     margin-top: 1rem;
-    height: 4rem;
+    height: 5rem;
 
     .container{
     width: 80%;
@@ -25,7 +25,7 @@ header{
       .active{
         color: $site_primary;
         border-bottom: 2px solid $site_primary;
-        padding-bottom: 1.8rem;
+        padding-bottom: 2.1rem;
       }
 
 

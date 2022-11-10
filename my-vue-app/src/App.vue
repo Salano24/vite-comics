@@ -24,7 +24,7 @@ export default{
 
   <site-jumbo></site-jumbo>
 
-  
+  <site-main-nav></site-main-nav>
 </template>
 
 <style scoped lang="scss">
