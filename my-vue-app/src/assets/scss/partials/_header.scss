@@ -1,0 +1,33 @@
+@use './variables' as *;
+header{
+    margin-top: 1rem;
+
+    .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+      a{
+        text-decoration: none;
+        color: #000;
+       margin-left: 1rem;
+        font-weight: 600;
+        font-size: 0.75rem
+      };
+
+      img{
+        height: 10vh;
+      };
+
+      .active{
+        color: $site_primary;
+        border-bottom: 2px solid $site_primary;
+        padding-bottom: 2rem;
+      }
+
+
+   }    
+   }
+  

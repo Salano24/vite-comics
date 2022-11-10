@@ -1,0 +1,11 @@
+@use './assets/scss/partials/header';
+@use './assets/scss/partials/jumbo';
+@use './assets/scss/partials/mainnav';
+@use './assets/scss/partials/main';
+@use './assets/scss/partials/footer';
+@use './assets/scss/partials/variables' as *;
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
