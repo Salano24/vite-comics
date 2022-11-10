@@ -1,0 +1,40 @@
+@use './variables' as *;
+main{
+    background-image: url(./assets/img/footer-bg.jpg);
+    
+    .d-flex{
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: auto;
+      
+
+      .row{
+        display: flex;
+      }
+      .col-4{
+        width: calc(100% / 12 * 4);
+        display:flex;
+        flex-direction: column;
+        color: $site_white;
+        margin-right: 2rem;
+        width: max-content;
+
+        h3{
+          margin: 1rem 0;
+          font-size: 2rem;
+        }
+
+        span{
+          font-size: 1.5rem;
+          color: gray;
+        }
+
+        
+        
+    }
+    img{
+        height: 30rem;
+    }
+    }
+  }

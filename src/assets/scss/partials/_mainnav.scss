@@ -1,0 +1,22 @@
+@use './variables' as *;
+.mainnav{
+    background-color: $site_primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+  
+  
+    .navItem{
+      display: inline-flex;
+      align-items: center;
+      color: $site_white;
+      padding: 1rem;
+     
+  
+      img{
+        height: 3rem;
+        padding-right: 0.5rem;
+      }
+    }
+   }

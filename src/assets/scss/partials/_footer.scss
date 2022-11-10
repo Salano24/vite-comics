@@ -1,0 +1,40 @@
+@use './variables' as *;
+footer{
+    background-color: #303030;
+    
+    .container{
+      width: 80%;
+      height: 6rem;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .signUp{
+        
+        button{
+          background-color: #303030;
+          color: $site_white;
+          padding: 0.5rem;
+          border: 2px solid $site_primary;
+          
+        }
+        
+      }
+
+      .social{
+        display: flex;
+        align-items: center;
+
+        span{
+          color: $site_primary;
+          font-weight: 600;
+        }
+
+        img{
+          margin-left: 1rem;
+        }
+      }
+      
+    }
+   }
