@@ -5,43 +5,43 @@ export default{
       return {
         headerNav: [
           {
-            text: CHARACTERS,
+            text: 'CHARACTERS',
             active: false
           },
           {
-            text: COMICS,
+            text: 'COMICS',
             active: true
           },
           {
-            text: MOVIES,
+            text: 'MOVIES',
             active: false
           },
           {
-            text: TV,
+            text: 'TV',
             active: false
           },
           {
-            text: GAMES,
+            text: 'GAMES',
             active: false
           },
           {
-            text: COLLECTIBLES,
+            text: 'COLLECTIBLES',
             active: false
           },
           {
-            text: VIDEOS,
+            text: 'VIDEOS',
             active: false
           },
           {
-            text: FANS,
+            text: 'FANS',
             active: false
           },
           {
-            text: NEWS,
+            text: 'NEWS',
             active: false
           },
           {
-            text: SHOP,
+            text: 'SHOP',
             active: false
           },
         ]

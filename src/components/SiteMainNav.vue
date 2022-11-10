@@ -3,7 +3,31 @@ export default{
     name: 'SiteHeader',
     data() {
       return {
-        
+        mainNav: [
+          {
+            text: 'DIGITAL COMICS',
+            fonte: "../assets/img/buy-comics-digital-comics.png"
+          },
+          {
+            text: 'DC MERCHANDISE',
+            fonte: '../assets/img/buy-comics-merchandise.png'
+          },
+          {
+            text: 'SUBSCRIPTION',
+            fonte: '../assets/img/buy-comics-subscriptions.png'
+          },
+          {
+            text: 'COMIC SHOP LOCATOR',
+            fonte: '../assets/img/buy-comics-shop-locator.png'
+          },
+          {
+            text: 'DC POWER VISA',
+            fonte: '../assets/img/buy-dc-power-visa.svg'
+          },
+          
+        ]
+       
+
       }
     }
 }
@@ -12,25 +36,9 @@ export default{
 <template>
  <div class="mainnav">
     <div class="container">
-      <div class="navItem">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-        <span>DIGITAL COMICS</span>
-      </div>
-      <div class="navItem">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        <span>DC MERCHANDISE</span>
-      </div>
-      <div class="navItem">
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-        <span>SUBSCRIPTION</span>
-      </div>
-      <div class="navItem">
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-        <span>COMIC SHOP LOCATOR</span>
-      </div>
-      <div class="navItem">
-        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-        <span>DC POWER VISA</span>
+      <div class="navItem" v-for="item in mainNav">
+        <img :src="item.fonte" alt="">
+        <span>{{item.text}}</span>
       </div>
      
     </div>
