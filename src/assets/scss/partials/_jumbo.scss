@@ -3,13 +3,43 @@
 .jumbo{
     background-color: $site_dark;
     color: $site_white;
-    height: 6rem;
-    display: flex;
-    align-items: center;
+  .current{
+    height: 50vh;
 
-      .container{
-        width: 80%;
-        margin: auto;
+    img{
+      max-height: 100%;
+      width: 100%;
+    }
+  } 
+    
+  .container{
+    margin: 0 2rem;
+  
+
+      .load{
+        display: flex;
+        justify-content: center;
+
+        button{
+          background-color: $site_primary;
+          padding: 1rem 2rem;
+          color: $site_white;
+          margin-bottom: 2rem;
+        }
       }
 
+      .col-2{
+        width: calc(100% / 12 * 2);
+        padding: 2rem 1rem;
+
+        h4{
+          text-align: center;
+        }
+
+        img{
+          height: 30vh;
+          aspect-ratio: 1 / 1;
+        }
+      }
+    }
    }
