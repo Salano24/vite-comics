@@ -6,29 +6,35 @@ export default{
         mainNav: [
           {
             text: 'DIGITAL COMICS',
-            fonte: "../assets/img/buy-comics-digital-comics.png"
+            fonte: "buy-comics-digital-comics.png"
           },
           {
             text: 'DC MERCHANDISE',
-            fonte: '../assets/img/buy-comics-merchandise.png'
+            fonte: 'buy-comics-merchandise.png'
           },
           {
             text: 'SUBSCRIPTION',
-            fonte: '../assets/img/buy-comics-subscriptions.png'
+            fonte: 'buy-comics-subscriptions.png'
           },
           {
             text: 'COMIC SHOP LOCATOR',
-            fonte: '../assets/img/buy-comics-shop-locator.png'
+            fonte: 'buy-comics-shop-locator.png'
           },
           {
             text: 'DC POWER VISA',
-            fonte: '../assets/img/buy-dc-power-visa.svg'
+            fonte: 'buy-dc-power-visa.svg'
           },
           
         ]
        
 
       }
+    },
+    methods:{
+       getImageUrl(fonte) {
+  return new URL(`../assets/img/${fonte}`, import.meta.url).href
+}
+
     }
 }
 </script>
@@ -37,7 +43,7 @@ export default{
  <div class="mainnav">
     <div class="container">
       <div class="navItem" v-for="item in mainNav">
-        <img :src="item.fonte" alt="">
+        <img :src="getImageUrl(item.fonte)" alt="">
         <span>{{item.text}}</span>
       </div>
      

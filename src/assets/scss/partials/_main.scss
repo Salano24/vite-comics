@@ -13,7 +13,6 @@ main{
         display: flex;
       }
       .col-4{
-        width: calc(100% / 12 * 4);
         display:flex;
         flex-direction: column;
         color: $site_white;
